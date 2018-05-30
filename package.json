@@ -12,5 +12,8 @@
   },
   "bin": {
     "brigtest": "src/index.js"
+  },
+  "scripts": {
+    "brigtest": "node ./src/index.js"
   }
 }

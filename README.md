@@ -10,6 +10,13 @@ This tool is useful for running an automated functional test against a brigade.j
 If you write tests into your `brigade.js` file, you can run them from here, as
 well.
 
+## Installing
+
+1. clone this repo
+2. `yarn global add ./brigtest`
+
+Or you can just clone this repo and run it with `yarn run brigtest` or `npm brigtest`
+
 ## Executing an Event
 
 The normal mode for `brigtest` is to run the script, attaching the following
