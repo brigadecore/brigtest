@@ -1,0 +1,39 @@
+{
+  "rules": [
+    {
+      "jobName": "hello",
+      "output": "hello world"
+    },
+    {
+      "jobName": "goodbye",
+      "output": "goodbye world"
+    },
+    {
+      "jobName": "do-error",
+      "error": "failed to win"
+    }
+  ],
+  "event": {
+    "type": "exec",
+    "buildID": "01CESG1PNQD4ZG0KG89V1KMKXT",
+    "workerID": "faux-worker",
+    "provider": "brigtest",
+    "revision": {
+      "ref": "refs/heads/master"
+    },
+    "payload": ""
+  },
+  "project": {
+    "id": "brigade-407900363c01e6153bc1a91792055b898e20a29f1387b72a0b6f00",
+    "name": "technosophos/-whale-eyes-",
+    "repo": {
+      "name": "https://github.com/technosophos/-whale-eyes-",
+      "cloneURL": "https://github.com/technosophos/-whale-eyes-.git",
+      "initGitSubmodules": false
+    },
+    "kubernetes": {},
+    "secrets": {},
+    "allowPrivilegedJobs": true,
+    "allowHostMounts": true
+  }
+}

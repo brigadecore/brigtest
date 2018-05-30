@@ -1,0 +1,16 @@
+{
+  "name": "brigtest",
+  "version": "0.1.0",
+  "description": "Test your brigade.js files",
+  "main": "src/index.js",
+  "repository": "https://github.com/Azure/brigtest",
+  "author": "M Butcher <matt.butcher@microsoft.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "ulid": "^2.3.0"
+  },
+  "bin": {
+    "brigtest": "src/index.js"
+  }
+}
