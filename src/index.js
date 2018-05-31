@@ -7,6 +7,7 @@ var program = require("commander");
 
 program
   .version("0.1.0")
+  .description("Test your brigade.js files")
   .option("-f, --brigade-script <file>", "Specify a 'brigade.js' file. Default is ./brigade.js.")
   .option("-e, --event <name>", "Run the given event. Default is 'exec'. This will override whatever is in --config.")
   .option("-p, --payload <file>", "Override the payload for the event.")

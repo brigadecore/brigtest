@@ -17,6 +17,42 @@ well.
 
 Or you can just clone this repo and run it with `yarn run brigtest` or `npm brigtest`
 
+## Running
+
+The simplest way to run `brigtest` is to execute it in the same directory in which
+the `brigade.js` resides:
+
+```
+$ brigtest
+```
+
+But you can specify the location of the `brigade.js` file:
+
+```
+$ brigtest -f foo/brigade.js
+```
+
+To make the most of `brigtest`, you can mock the data you want to send to the
+`brigade.js`. See the *Executing an Event* and *Modeling Behavuir* sections below.
+
+
+```console
+$ brigtest -h
+   Usage: index [options]
+
+  Test your brigade.js files
+
+  Options:
+
+    -V, --version                output the version number
+    -f, --brigade-script <file>  Specify a 'brigade.js' file. Default is ./brigade.js.
+    -e, --event <name>           Run the given event. Default is 'exec'. This will override whatever is in --config.
+    -p, --payload <file>         Override the payload for the event.
+    -c, --config <file>          Path to configuration. Default will generate a base event and project.
+    -x, --syntax                 Only check syntax, then exit.
+    -h, --help                   output usage information
+```
+
 ## Executing an Event
 
 The normal mode for `brigtest` is to run the script, attaching the following
