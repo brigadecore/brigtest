@@ -144,7 +144,7 @@ So you can check whether a particular run is a test like this:
 const { events } = require("brigadier");
 
 events.on("exec", (e, project) => {
-  if (project.isBrigtest) {
+  if (project.secrets.isBrigtest) {
     console.log("this is a test");
   }
 });
