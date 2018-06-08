@@ -135,6 +135,21 @@ Here is an example that shows all three sections:
 Note that you can override the event name (`-e`) and the payload (`-p`) from the
 command line tool. But all other fields must be set in the config file.
 
+## Checking to See if This is a Test
+
+Every request run through `brigtest` will add `isBrigtest: true` to the project's secrets.
+So you can check whether a particular run is a test like this:
+
+```javascript
+const { events } = require("brigadier");
+
+events.on("exec", (e, project) => {
+  if (project.isBrigtest) {
+    console.log("this is a test");
+  }
+});
+````
+
 ## Syntax Checking
 
 To use this as a syntax checker, you can do `brigtest -x`. This will merely
