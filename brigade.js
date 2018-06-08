@@ -2,6 +2,11 @@ const {events, Job} = require("brigadier")
 
 // To run this: `brigtest -c example-config.json`
 events.on("exec", (e, p) => {
+
+  if (p.secrets.isBrigtest) {
+    console.log("we are running a test!");
+  }
+
   var j = new Job("hello", "alpine:3.7");
 
   // Note that we have to mock out the response in example-config.json

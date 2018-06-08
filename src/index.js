@@ -52,6 +52,9 @@ if (program.payload) {
   config.event.payload = fs.readFileSync(program.payload)
 }
 
+// Inbject the isBrigtest secret on every request
+config.project.secrets.isBrigtest = true;
+
 brigadier.setConfig(config);
 
 // Single-use require wrapper for loading brigadier fixture
