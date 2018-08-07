@@ -78,11 +78,11 @@ if (program.syntax) {
 x.runInContext(ctx)
 
 process.on("unhandledRejection", (reason, p) => {
-  console.error(`FATAL: ${ reason }`);
+  console.error(`FATAL: ${ reason } (rejection)`);
   process.exit(1);
 })
 process.on("uncaughtException", (reason, p) => {
-  console.error(`FATAL: ${ reason }`);
+  console.error(`FATAL: ${ reason } (exception)`);
   process.exit(1);
 })
 

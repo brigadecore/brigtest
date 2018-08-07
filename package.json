@@ -8,7 +8,8 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^2.15.1",
-    "ulid": "^2.3.0"
+    "ulid": "^2.3.0",
+    "@azure/brigadier": "^0.1.0"
   },
   "bin": {
     "brigtest": "src/index.js"

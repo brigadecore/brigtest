@@ -1,6 +1,6 @@
-const ev = require("../generated/events")
-const jobs = require("../generated/job");
-const groups = require("../generated/group");
+const ev = require("@azure/brigadier/out/events")
+const jobs = require("@azure/brigadier/out/job");
+const groups = require("@azure/brigadier/out/group");
 
 var emitter = new ev.EventRegistry()
 var currentEvent;

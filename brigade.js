@@ -17,9 +17,7 @@ events.on("exec", (e, p) => {
   j.storage.enabled = true;
 
   j.run().then( res => {
-    if (res.toString() != "hello world") {
-      throw new Error(`Expected hello, got "${ res.toString() }"`)
-    }
+    console.log(`test fixture returned: ${ res.toString() }`)
   });
 })
 
