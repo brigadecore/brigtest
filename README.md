@@ -15,7 +15,7 @@ well.
 1. clone this repo
 2. `yarn global add ./brigtest`
 
-Or you can just clone this repo and run it with `yarn run brigtest` or `npm brigtest`
+Or you can just clone this repo and run it with `yarn run brigtest -c CONFIG_FILE` or `npm run brigtest -- -c CONFIG_FILE`
 
 ## Running
 
