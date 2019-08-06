@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "repository": "https://github.com/Azure/brigtest",
   "author": "M Butcher <matt.butcher@microsoft.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "dependencies": {
     "commander": "^2.15.1",
     "ulid": "^2.3.0",
