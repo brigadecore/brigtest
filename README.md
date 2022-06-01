@@ -1,3 +1,9 @@
+> ⚠️&nbsp;&nbsp;This repo contains the source for a component of the Brigade
+> v1.x ecosystem. Brigade v1.x reached end-of-life on June 1, 2022 and as a
+> result, this component is no longer maintained. Note that Brigadier v2.x
+> (compatible with Brigade v2.x) directly incorporates the functionality
+> previously provided by this component.
+
 # brigtest: Test Your Brigade.js
 
 This is a trivial testing tool for checking your [Brigade](https://brigade.sh) script.
